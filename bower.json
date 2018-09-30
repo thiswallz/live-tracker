@@ -1,0 +1,13 @@
+{
+    "name": "live-tracker",
+    "version": "1.0.0",
+    "ignore": [
+        ".gitattributes",
+        "README.md",
+        ".gitignore"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}

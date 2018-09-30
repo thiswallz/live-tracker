@@ -1,33 +1,41 @@
-const LiveTracker = options => {
-  var svgns = "http://www.w3.org/2000/svg",
-    stopsOn = [stop(0, "#b70500"), stop(1, "#ce0000")],
-    stopsOff = [stop(0, "#252525"), stop(1, "#555555")],
-    radialOff = radialGradient("radialOffId"),
-    radialOn = radialGradient("radialOnId"),
+var LiveTracker = (function() {
+  var svg,
+    svgns = "http://www.w3.org/2000/svg",
+    stopsOn,
+    stopsOff,
+    radialOff,
+    radialOn,
     itemWidth = 191,
     itemHeight = 129,
     itemOffset = 48,
     steps = [],
     masks = [];
-  var svg = generateSvg(options);
 
-  radialOn.appendChild(stopsOn[0]);
-  radialOn.appendChild(stopsOn[1]);
-  radialOff.appendChild(stopsOff[0]);
-  radialOff.appendChild(stopsOff[1]);
+  function LiveTracker(options) {
+    svg = generateSvg(options);
+    stopsOn = [stop(0, "#b70500"), stop(1, "#ce0000")];
+    stopsOff = [stop(0, "#252525"), stop(1, "#555555")];
+    radialOff = radialGradient("radialOffId");
+    radialOn = radialGradient("radialOnId");
 
-  var defs = gdef();
-  defs.appendChild(radialOn);
-  defs.appendChild(radialOff);
-  masks = generateMasks(defs, options.steps);
-  steps = generateSteps(svg, options.steps);
+    radialOn.appendChild(stopsOn[0]);
+    radialOn.appendChild(stopsOn[1]);
+    radialOff.appendChild(stopsOff[0]);
+    radialOff.appendChild(stopsOff[1]);
 
-  svg.appendChild(defs);
-  options.render.appendChild(svg);
+    var defs = gdef();
+    defs.appendChild(radialOn);
+    defs.appendChild(radialOff);
+    masks = generateMasks(defs, options.steps);
+    steps = generateSteps(svg, options.steps);
+
+    svg.appendChild(defs);
+    options.render.appendChild(svg);
+  }
 
   //define
 
-  this.setActive = function(pos) {
+  LiveTracker.prototype.setActive = function(pos) {
     var active = steps[pos];
     var paths = active.getElementsByTagName("path");
     var t = paths[0].getAttribute("transform").match(/.\((.*),(.*)\).*/);
@@ -44,7 +52,7 @@ const LiveTracker = options => {
     svg.appendChild(active);
   };
 
-  this.setProgress = function(pos, percentage) {
+  LiveTracker.prototype.setProgress = function(pos, percentage) {
     percentage = parseInt(percentage, 10);
     var active = masks[pos];
     var rOn = active[0].getElementsByTagName("rect")[0];
@@ -200,6 +208,6 @@ const LiveTracker = options => {
     rect.setAttributeNS(null, "height", height);
     return rect;
   }
-};
 
-export default LiveTracker;
+  return LiveTracker;
+})();
