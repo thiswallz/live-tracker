@@ -1,7 +1,7 @@
 # Live Tracker
 Lightweight, vanilla javascript/svg library (~1kb gzipped 🎉)
 
-![Alt text](demo.png?raw=true 'Example 1')
+![Alt text](https://raw.githubusercontent.com/thiswallz/live-tracker/master/demo.png?raw=true 'Example 1')
 
 
 ## Demo
