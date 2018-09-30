@@ -1,8 +1,11 @@
 # Live Tracker
 Lightweight, vanilla javascript/svg library (~1kb gzipped 🎉)
 
+### Default color
 ![Alt text](https://raw.githubusercontent.com/thiswallz/live-tracker/master/demo.png?raw=true 'Example 1')
 
+### Custom color
+![Alt text](https://raw.githubusercontent.com/thiswallz/live-tracker/master/demo2.png?raw=true 'Multi Color')
 
 ## Demos
 
