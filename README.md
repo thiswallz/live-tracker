@@ -1,5 +1,5 @@
 # Live Tracker
-A vanilla, lightweight (~1kb gzipped 🎉)
+Lightweight, vanilla javascript library (~1kb gzipped 🎉)
 
 ![Alt text](demo.png?raw=true 'Example 1')
 
@@ -24,13 +24,13 @@ Link to JS file ex.:
 <script src="src/index.min.js" type="text/javascript"></script>
 ```
 
-Original dropdown you want to replace with Selecto's.
+Element to render
 ```html
- <div class="container">
+<div class="container">
 </div>
 ```
 
-To initialize Selecto:
+To initialize Live-tracker:
 ```javascript
 var livet = new LiveTracker({
     render: document.getElementsByClassName("container")[0],
@@ -77,7 +77,7 @@ livet.setProgress(3, 60);
 
 Method | Description
 ------ | -----------
-.setActive() | active a stage
-.setProgress() | set progress for one stage
+.setActive(step) | active a stage
+.setProgress(step, percentage) | set progress for one stage
 
 
