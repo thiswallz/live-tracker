@@ -4,9 +4,9 @@ Lightweight, vanilla javascript/svg library (~1kb gzipped 🎉)
 ![Alt text](https://raw.githubusercontent.com/thiswallz/live-tracker/master/demo.png?raw=true 'Example 1')
 
 
-## Demo
+## Demo vanilla javascript
 
-[Link]()
+[Link](https://codepen.io/thiswallz/pen/yRyXEY)
 
 ## Install
 

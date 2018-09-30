@@ -1,6 +1,6 @@
 {
   "name": "live-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Live tracker made in SVG and vanilla Javascript",
   "main": "src/index.js",
   "scripts": {
@@ -12,10 +12,11 @@
     "url": "git+https://github.com/thiswallz/live-tracker.git"
   },
   "keywords": [
-    "progress  bar",
+    "progress bar",
     "svg",
     "javascript",
     "live data",
+    "tracker data",
     "progress"
   ],
   "devDependencies": {
