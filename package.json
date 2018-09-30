@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/thiswallz/live-tracker/issues"
   },
-  "homepage": "https://github.com/thiswallz/live-tracker#readme"
+  "homepage": "https://github.com/thiswallz/live-tracker#readme",
+  "dependencies": {
+    "westag-selecto": "^1.0.1"
+  }
 }
