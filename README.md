@@ -1,5 +1,5 @@
 # Live Tracker
-Lightweight, vanilla javascript library (~1kb gzipped 🎉)
+Lightweight, vanilla javascript/svg library (~1kb gzipped 🎉)
 
 ![Alt text](demo.png?raw=true 'Example 1')
 
@@ -35,32 +35,26 @@ To initialize Live-tracker:
 var livet = new LiveTracker({
     render: document.getElementsByClassName("container")[0],
     steps: [{
-    title: "1",
     iconFill: "#fff",
     iconSvg: "m3.48439,15.83231l2.79376,-3.50417l7.65345,9.59499l12.75805,-15.99165l2.79474,3.5017l-15.55279,19.4983"
     },
     {
-    title: "2",
     iconFill: "#fff",
     iconSvg: "m3.48439,15.83231l2.79376,-3.50417l7.65345,9.59499l12.75805,-15.99165l2.79474,3.5017l-15.55279,19.4983"
     },
     {
-    title: "3",
     iconFill: "#fff",
     iconSvg: "m3.48439,15.83231l2.79376,-3.50417l7.65345,9.59499l12.75805,-15.99165l2.79474,3.5017l-15.55279,19.4983"
     },
     {
-    title: "4",
     iconFill: "#fff",
     iconSvg: "m3.48439,15.83231l2.79376,-3.50417l7.65345,9.59499l12.75805,-15.99165l2.79474,3.5017l-15.55279,19.4983"
     },
     {
-    title: "5",
     iconFill: "#fff",
     iconSvg: "m3.48439,15.83231l2.79376,-3.50417l7.65345,9.59499l12.75805,-15.99165l2.79474,3.5017l-15.55279,19.4983"
     },
     {
-    title: "6",
     iconFill: "#fff",
     iconSvg: "m3.48439,15.83231l2.79376,-3.50417l7.65345,9.59499l12.75805,-15.99165l2.79474,3.5017l-15.55279,19.4983"
     }]
