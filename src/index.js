@@ -121,7 +121,7 @@ var LiveTracker = (function() {
   }
 
   function translateItem(pos) {
-    return pos === 0 ? 50 : itemWidth * pos - itemOffset * pos + 50;
+    return pos === 0 ? 39 : (itemWidth - itemOffset - 1) * pos + 39;
   }
 
   function generateSvg(options) {
