@@ -4,9 +4,11 @@ Lightweight, vanilla javascript/svg library (~1kb gzipped 🎉)
 ![Alt text](https://raw.githubusercontent.com/thiswallz/live-tracker/master/demo.png?raw=true 'Example 1')
 
 
-## Demo vanilla javascript
+## Demos
 
-[Link](https://codepen.io/thiswallz/pen/yRyXEY)
+[Link Vanilla JS](https://codepen.io/thiswallz/pen/yRyXEY)
+
+[Link Angular 6 Usage](https://stackblitz.com/edit/angular-livetracker-demo)
 
 ## Install
 
