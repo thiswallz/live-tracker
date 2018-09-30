@@ -1,6 +1,6 @@
 {
   "name": "live-tracker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Live tracker made in SVG and vanilla Javascript",
   "main": "src/index.js",
   "scripts": {
