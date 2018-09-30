@@ -4,7 +4,8 @@
   "description": "Live tracker made in SVG and vanilla Javascript",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,15 @@
     "live data",
     "progress"
   ],
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  },
   "author": "Masuricio Joost<mauriciojoostwolff@gmail.com>",
   "license": "ISC",
   "bugs": {

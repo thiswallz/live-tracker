@@ -15,8 +15,8 @@ var LiveTracker = (function() {
     svg = generateSvg(options);
     stopsOn = [stop(0, "#b70500"), stop(1, "#ce0000")];
     stopsOff = [stop(0, "#252525"), stop(1, "#555555")];
-    radialOff = radialGradient("radialOffId");
-    radialOn = radialGradient("radialOnId");
+    radialOff = radialGradient("rOffId");
+    radialOn = radialGradient("rOnId");
 
     radialOn.appendChild(stopsOn[0]);
     radialOn.appendChild(stopsOn[1]);
@@ -64,8 +64,8 @@ var LiveTracker = (function() {
   function generateMasks(defs, steps) {
     var list = [];
     for (var i = 0; i <= steps.length - 1; i++) {
-      var maskOn = mask("maskOnId" + i);
-      var maskOff = mask("maskOffId" + i);
+      var maskOn = mask("mOnId" + i);
+      var maskOff = mask("mOffId" + i);
       maskOn.appendChild(rect(0, 0, "#fff", 0, itemHeight));
       maskOff.appendChild(rect(0, 0, "#fff", itemWidth, itemHeight));
       defs.appendChild(maskOn);
@@ -83,8 +83,8 @@ var LiveTracker = (function() {
         path(
           i + "s1",
           "translate(" + translateItem(i) + ", 10)",
-          "url(#radialOffId)",
-          "mask: url(#maskOffId" + i + ")",
+          "url(#rOffId)",
+          "mask: url(#mOffId" + i + ")",
           dg(),
           5,
           "#222"
@@ -94,8 +94,8 @@ var LiveTracker = (function() {
         path(
           i + "s2",
           "translate(" + translateItem(i) + ", 10)",
-          "url(#radialOnId)",
-          "mask: url(#maskOnId" + i + ")",
+          "url(#rOnId)",
+          "mask: url(#mOnId" + i + ")",
           dg(),
           5,
           "#ce0000"
