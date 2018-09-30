@@ -28,7 +28,7 @@ var LiveTracker = (function() {
     defs.appendChild(radialOff);
     masks = generateMasks(defs, options.steps);
     steps = generateSteps(svg, options.steps);
-    svg.innerHTML = "";
+    options.render.innerHTML = "";
     svg.appendChild(defs);
     options.render.appendChild(svg);
   }
