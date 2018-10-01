@@ -89,3 +89,13 @@ borderColor | array | array with 2 elements (gradien border)
 activeColor | string | stage main color when is actived
 iconSvg | string | path for the icon svg
 
+
+## Authors
+
+* **Mauricio Joost Wolff** - *Initial work* - [GitHub](https://github.com/thiswallz)
+
+See also the list of [contributors](https://github.com/thiswallz/live-tracker/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the ISC License 
