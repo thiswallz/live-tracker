@@ -80,3 +80,12 @@ Method | Description
 .setProgress(step, percentage) | set progress for one stage
 
 
+## Step Object
+
+Propertie | Type | Description
+------ | ------ | -----------
+color | string | stage main color
+borderColor | array | array with 2 elements (gradien border)
+activeColor | string | stage main color when is actived
+iconSvg | string | path for the icon svg
+
