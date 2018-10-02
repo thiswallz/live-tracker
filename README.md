@@ -13,6 +13,9 @@ Lightweight, vanilla javascript/svg library (~1kb gzipped 🎉)
 
 [Link Angular 6 Usage](https://stackblitz.com/edit/angular-livetracker-demo)
 
+[Link Live Data Simulation](https://codepen.io/thiswallz/pen/bmdWVg)
+
+
 ## Install
 
 ### npm
