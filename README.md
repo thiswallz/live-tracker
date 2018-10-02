@@ -89,6 +89,10 @@ borderColor | array | array with 2 elements (gradien border)
 activeColor | string | stage main color when is actived
 iconSvg | string | path for the icon svg
 
+### TODOs
+
+- [ ] getPercentage
+- [ ] getState
 
 ## Authors
 
