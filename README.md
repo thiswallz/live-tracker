@@ -96,6 +96,7 @@ iconSvg | string | path for the icon svg
 
 - [ ] getPercentage
 - [ ] getState
+- [ ] create types/ module es6
 
 ## Authors
 
